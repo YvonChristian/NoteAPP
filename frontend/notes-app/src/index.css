@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "monospace", "sans-serif";
+  }
+
+  /* BODYCSS */
+  body {
+    background-color: #F1F1F1;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .input-box {
+    @apply w-full text-sm bg-transparent border-[1px] px-5 py-3 rounded mb-1 outline-none;
+  }
+
+  .btn-primary {
+    @apply w-full text-sm bg-primary text-white p-2 rounded my-1 hover:bg-blue-600;
+  }
+
+  .AddIcon {
+    @apply w-16 flex h-16 items-center justify-center rounded-full bg-green-400 hover:bg-green-600 absolute right-10 bottom-10;
+  }
+
+  .Card {
+    @apply w-96 relative flex flex-col m-3 ml-5 text-gray-700 bg-white hover:shadow-lg transition-all ease-out bg-clip-border rounded-xl;
+  }
+
+  .input-label {
+    @apply text-xs text-slate-400;
+  }
+}
